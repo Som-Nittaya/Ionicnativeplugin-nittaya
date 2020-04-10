@@ -1,14 +1,61 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ionic Native
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  <h2>Examples</h2>
+  <p>Barcode Scanner</p>
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
+    <button ion-button color="primary" (click)="readBarcode()">
+      Read Barcode
+    </button>
+  </p>
+  <p>Text: {{text}}</p>
+  <p>Format: {{format}}</p>
+
+  <p>Text to Speech</p>
+  <p>
+    <button ion-button color="primary" (click)="Speak()">
+      Speak
+    </button>
+  </p>
+
+  <p>Screenshot</p>
+  <p>
+    <button ion-button color="primary" (click)="capture()">
+      Capture
+    </button>
+  </p>
+
+  <p>CardIO</p>
+  <p>
+    <button ion-button color="primary" (click)="CardIO()">
+      CardIO
+    </button>
+  </p>
+
+  <p>PhotoViewer</p>
+  <p>
+    <button ion-button color="primary" (click)="PhotoViewer()">
+      PhotoViewer
+    </button>
+  </p>
+
+  <p>Crop</p>
+  <p>
+    <button ion-button color="primary" (click)="Crop()">
+      Crop
+    </button>
+  </p>
+
+  <p>Camera</p>
+  <p>
+    <button ion-button color="primary" (click)="Camera()">
+      camera
+    </button>
   </p>
 </ion-content>

@@ -6,6 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
+import { TextToSpeech } from '@ionic-native/text-to-speech';
+import { Screenshot } from '@ionic-native/screenshot';
+import { Toast } from '@ionic-native/toast';
+import { CardIO } from '@ionic-native/card-io';
+import { PhotoViewer } from '@ionic-native/photo-viewer';
+import { Crop } from '@ionic-native/crop';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+
 
 @NgModule({
   declarations: [
@@ -14,7 +23,7 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -24,7 +33,15 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    BarcodeScanner,
+    TextToSpeech,
+    Screenshot,
+    Toast,
+    CardIO,
+    PhotoViewer,
+    Crop,
+    Camera
   ]
 })
 export class AppModule {}
